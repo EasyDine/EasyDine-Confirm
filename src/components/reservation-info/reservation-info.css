@@ -193,4 +193,10 @@ time {
         height: 50px;
         font-size: 25px;
     }
+
+    .reject:hover,
+    .confirm:hover {
+        width: 145px;
+        height: 55px;
+    }
 }
