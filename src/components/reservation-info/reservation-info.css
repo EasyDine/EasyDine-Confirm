@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    color: #2f372d;
+    font-family: 'BPG LE Studio 02 Caps';
+}
+
+.reservationContainer {
+    width: fit-content;
+    margin: 100px auto;
+}
+
+.infoContainer {
+    width: 600px;
+    height: 200px;
+    border-radius: 6px;
+    box-shadow: 0 4px 9.8px -1px rgba(0, 0, 0, 0.25);
+    border: solid 1px #f1c376;
+    background-color: #f7e6c4;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.infoHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin: 10px 0 0 60px;
+}
+
+.personName {
+    font-size: 22px;
+    font-weight: normal;
+    color: #2f372d;
+    font-weight: 600;
+}
+
+.infoIcon {
+    width: 29.3px;
+    height: 29.3px;
+}
+
+time {
+    font-size: 22px;
+    font-weight: bold;
+    color: #606c5d;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.reservationInfo {
+    text-align: start;
+    margin: 10px 20px;
+}
+
+
+.reservationInfo li {
+    font-size: 22px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.reservationInfo svg {
+    width: 30px;
+}
+
+.alertIcon {
+    height: 45px;
+    margin: 28px auto;
+
+}
+
+.reservationStatus {
+    text-align: center;
+}
+
+.reservationStatus p {
+    font-size: 18px;
+    color: #606c5d;
+}
+
+.status {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.buttons {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.reject,
+.confirm {
+    width: 180px;
+    height: 55px;
+    border-radius: 6px;
+    background-color: #f7e6c4;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.reject:hover,
+.confirm:hover {
+    width: 185px;
+    height: 60px;
+}
+
+.confirm {
+    background-color: #f1c376;
+}
+
+@media screen and (max-width:620px) {
+
+    .infoContainer {
+        width: 420px;
+        height: 450px;
+        grid-template-columns: none;
+    }
+
+    .infoHeader {
+        margin: 0;
+        justify-content: center;
+        transform: translateY(-20px);
+    }
+
+    time {
+        grid-row: 1/-1;
+        text-align: right;
+        margin: 14px 14px 0 0;
+        height: 30px;
+    }
+
+    .reservationInfo {
+        text-align: center;
+        margin: 0;
+    }
+
+    .reservationInfo li {
+        justify-content: center;
+    }
+
+    .buttons {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width:430px) {
+
+    .infoContainer {
+        width: 320px;
+        height: 450px;
+        grid-template-columns: none;
+    }
+
+    .infoHeader {
+        margin: 0;
+        justify-content: center;
+        transform: translateY(-20px);
+    }
+
+    time {
+        grid-row: 1/-1;
+        text-align: right;
+        margin: 14px 14px 0 0;
+        height: 30px;
+    }
+
+    .reservationInfo {
+        text-align: center;
+        margin: 0;
+    }
+
+    .reservationInfo li {
+        justify-content: center;
+    }
+
+    .buttons {
+        width: 320px;
+    }
+
+    .reject,
+    .confirm {
+        width: 140px;
+        height: 50px;
+        font-size: 25px;
+    }
+}
