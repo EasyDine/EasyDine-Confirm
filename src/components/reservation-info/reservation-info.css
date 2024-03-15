@@ -53,18 +53,28 @@ time {
 }
 
 .reservationInfo {
-    text-align: start;
-    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px 0 0 20px ;
+}
+
+.reservationInfo div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.reservationInfo p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2f372d;
 }
 
 
-.reservationInfo li {
-    font-size: 22px;
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    margin-top: 15px;
-    font-weight: 600;
+.reservationInfo img {
+    height: 30px;
 }
 
 .reservationInfo svg {
@@ -140,13 +150,10 @@ time {
     }
 
     .reservationInfo {
-        text-align: center;
-        margin: 0;
+        align-items: center;
+        margin: 10px 0 0 0;
     }
 
-    .reservationInfo li {
-        justify-content: center;
-    }
 
     .buttons {
         width: 420px;
@@ -172,15 +179,6 @@ time {
         text-align: right;
         margin: 14px 14px 0 0;
         height: 30px;
-    }
-
-    .reservationInfo {
-        text-align: center;
-        margin: 0;
-    }
-
-    .reservationInfo li {
-        justify-content: center;
     }
 
     .buttons {
