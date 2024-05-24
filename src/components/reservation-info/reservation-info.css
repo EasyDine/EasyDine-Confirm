@@ -140,7 +140,7 @@ time {
 
     .infoContainer {
         width: 420px;
-        height: 450px;
+        /* height: 450px; */
         grid-template-columns: none;
     }
 
@@ -173,7 +173,7 @@ time {
 
     .infoContainer {
         width: 320px;
-        height: 450px;
+        /* height: 450px; */
         grid-template-columns: none;
     }
 
