@@ -148,6 +148,12 @@ export default function ReservationInfo() {
               </p>
             </div>
           )}
+
+          {reservation.note && (
+            <div>
+              <p>Note: {reservation.note}</p>
+            </div>
+          )}
         </div>
         <div className="reservationStatus">
           <img className="alertIcon" src={alertIcon} alt="alert icon" />
