@@ -39,7 +39,8 @@ function getFormattedDate(isoString) {
 
   const month = monthNames[date.getMonth()];
 
-  const weekday = weekdayNames[date.getDay()];
+  const weekday = weekdayNames[(date.getDay() + 6) % 7];
+  console.log(date.getDay())
   return `${day} ${weekday}, ${month} ${year}`;
 }
 
